@@ -6,6 +6,7 @@ const {Resource} = require("../models/Resource");
 const bcrypt = require("bcrypt");
 const { Mongoose } = require("mongoose");
 const jwt=require('jsonwebtoken');
+const verifyToken=require('../middleware/Auth')//we will use it after setup will be over
 
 
 router.get("/signup",(req,res)=>{
