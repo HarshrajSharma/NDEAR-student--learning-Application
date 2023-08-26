@@ -46,7 +46,7 @@ app.get('/api/prof/:key',(req,res)=>{
     readStream.pipe(res)
 })
 
-app.post("/api/prof",upload.single('image'),async(req,res)=>{
+app.post("/api/prof",/* upload.single('image') */upload.array('image', 4),async(req,res)=>{
     const file=req.file
     console.log(file)
     const result=await uploadFile(file)

@@ -4,7 +4,7 @@ const jwt =require("jsonwebtoken");
 const userSchema=new mongoose.Schema({
     email: {type:String, required:true},
     state: {type:String, required:true},
-    country: {type:String, requied:true},
+    country: {type:String, required:true},
     fname: {type:String, required:true},
     lname: {type:String, required:true},
     dob: {type:Date, required:true},   // 'yyyy-mm-dd' format
